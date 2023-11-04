@@ -372,7 +372,82 @@
                         </li>
                     </ul>
                 </div>
+                <div class="box-subscribe">
+                    <p class="subscribe-title">Subscribe</p>
+                    <form class="subscribe-form" name="subscribe" autocomplete="off">
+                        <label class="subscribe-label">
+                            <input class="subscribe-email" 
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"/>
+                        </label>
+                        <button class="subscribe-btn" type="submit">Subscribe
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-Frame-3"></use>
+                            </svg> 
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
+
+        <div class="backdrop is-open">
+            <div class="modal">
+                <button class="modal-close-btn" type="button">
+                    <svg class="modal-close-btn-icon" width="8" height="8" aria-label="modal close button">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="form-description">Leave your contacts and we will call you back</p>
+                <form class="review-form">
+                    <div class="form-field-wrapper">
+                        <label class="form-field-label" for="user-first-name">
+                            Name
+                        </label>
+                        <input class="form-field" 
+                            type="text" 
+                            name="user_first_name" 
+                            id="user-first-name"
+                            required
+                            pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙґҐ']+"
+                            title="Andrii"
+                        />
+                    </div>
+                    <div class="form-field-wrapper">
+                        <label class="form-field-label" for="">
+                            Phone
+                        </label>
+                        <input class="form-field" 
+                            type="tel" 
+                            name="user_phone_number"
+                            id="user-phone"
+                            required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            title="xxx-xxx-xx-xx"
+                        />
+                    </div>
+                    <div class="form-field-wrapper">
+                        <label class="form-field-label" for="user-email">
+                            Email
+                        </label>
+                        <input class="form-field" 
+                            type="email"
+                            name="user_email"
+                            id="user-email"
+                            required
+                        />
+                    </div>
+                    <div class="form-field-wrapper">
+                        <label class="form-field-label" for="">Comment</label>
+                        <textarea class="form-message" name="" id="" placeholder="Text input"></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input class="form-checkbox" type="checkbox">
+                        <label class="form-checkbox-label" for="">I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></label>
+                    </div>
+                    <button class="form-btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
